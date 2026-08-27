@@ -1,0 +1,10 @@
+name = "discord-server-cloner"
+main = "worker.js"
+compatibility_date = "2024-03-01"
+
+[vars]
+# DISCORD_PUBLIC_KEY는 Cloudflare 대시보드 환경 변수(Secrets)에 등록하세요.
+
+[[kv_namespaces]]
+binding = "SERVER_BACKUPS"
+id = "YOUR_KV_NAMESPACE_ID"
