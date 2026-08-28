@@ -2639,6 +2639,7 @@ function sleep(ms) {
 
 
 function permanentError(message) {
+  /** @type {Error & { permanent?: boolean }} */
   const err =
     new Error(message);
 
